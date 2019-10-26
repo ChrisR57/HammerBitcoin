@@ -364,11 +364,11 @@ public class BitcoinMiner {
     private int getNumber(String message) {
         while (true) {
             System.out.print(message);
-            var userInput = scanner.nextLine();
+            String userInput = scanner.nextLine();
             try {
                 return Integer.parseInt(userInput);
             } catch (Exception ignored) {
-                System.out.printf("%s isn't a number!%n", userInput);
+                System.out.printf("%s isn't a whole number!%n", userInput);
             }
         }
     }
